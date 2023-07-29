@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import com.example.dishesgptapp.R
 import com.example.dishesgptapp.presentation.viewmodels.StartViewModel
 
-class StartFragment : Fragment() {
+class StartFragment : Fragment(R.layout.fragment_start) {
 
     private lateinit var viewModel: StartViewModel
 

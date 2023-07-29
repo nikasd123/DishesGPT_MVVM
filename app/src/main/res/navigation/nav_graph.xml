@@ -6,6 +6,11 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/start_fragment">
 
+    <activity
+        android:id="@+id/activity"
+        android:name="com.example.dishesgptapp.presentation.activity.MainActivity"
+        tools:layout="@layout/activity_main"/>
+
     <fragment
         android:id="@+id/start_fragment"
         android:name="com.example.dishesgptapp.presentation.fragments.StartFragment"
