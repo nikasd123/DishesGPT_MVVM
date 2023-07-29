@@ -42,19 +42,31 @@
 
         </RelativeLayout>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:text="add one more"
+            android:text="@string/button_add_text"
             android:layout_marginVertical="10dp"
             android:background="@drawable/button_shape"
-            />
+            app:icon="@drawable/plus"
+            app:iconSize="15dp"/>
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:cardBackgroundColor="@color/white_gray"
+            app:cardBackgroundColor="@color/gray"
             app:cardCornerRadius="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
