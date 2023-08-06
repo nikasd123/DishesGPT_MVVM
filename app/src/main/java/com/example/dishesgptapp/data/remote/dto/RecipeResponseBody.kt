@@ -7,7 +7,7 @@ data class RecipeResponseBody(
     val id: String,
 
     @SerializedName("object")
-    val `object`: String,
+    val obj: String,
 
     @SerializedName("created")
     val created: Long,
