@@ -1,9 +1,17 @@
 package com.example.dishesgptapp.data.remote.dto
 
+import com.google.gson.annotations.SerializedName
+
 data class RecipeRequestBody(
-    val prompt: String,
-    val length: Int,
-    val temperature: Double,
-    val topP: Double,
-    val topK: Int
+    @SerializedName("prompt")
+    val prompt: String?,
+
+    @SerializedName("model")
+    val model: Int?,
+
+    @SerializedName("temperature")
+    val temperature: Double? = 0.5,
+
+    @SerializedName("max_tokens")
+    val maxTokens: Int,
 )
