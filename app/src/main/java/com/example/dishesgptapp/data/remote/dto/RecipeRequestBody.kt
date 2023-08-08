@@ -10,7 +10,7 @@ data class RecipeRequestBody(
     val model: Int?,
 
     @SerializedName("temperature")
-    val temperature: Double? = 0.5,
+    val temperature: Double?,
 
     @SerializedName("max_tokens")
     val maxTokens: Int,
