@@ -2,8 +2,7 @@ package com.example.dishesgptapp.data.remote.api
 
 import com.example.dishesgptapp.BuildConfig
 import com.example.dishesgptapp.data.remote.dto.RecipeRequestBody
-import com.example.dishesgptapp.data.remote.dto.RecipeResponseBody
-import retrofit2.Call
+import com.example.dishesgptapp.data.remote.dto.RecipeResponse
 import retrofit2.http.Body
 import retrofit2.http.Headers
 import retrofit2.http.POST
@@ -20,5 +19,5 @@ interface ChatGPTService {
     @POST("completions")
     suspend fun generateRecipe(
         @Body requestBody: RecipeRequestBody
-    ): Call<RecipeResponseBody>
+    ): RecipeResponse
 }
