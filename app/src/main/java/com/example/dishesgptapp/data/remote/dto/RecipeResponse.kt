@@ -2,7 +2,7 @@ package com.example.dishesgptapp.data.remote.dto
 
 import com.google.gson.annotations.SerializedName
 
-data class RecipeResponseBody(
+data class RecipeResponse(
     @SerializedName("id")
     val id: String,
 
