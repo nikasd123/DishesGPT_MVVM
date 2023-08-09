@@ -14,7 +14,7 @@ data class ChatGPTRequest(
     val temperature: Double?,
 
     @SerializedName("max_tokens")
-    val maxTokens: Int,
+    val maxTokens: Int?,
 )
 
 internal fun ChatGPTRequest.toDomainGPTRecipesRequest(): DomainGPTRecipesRequest =

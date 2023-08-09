@@ -4,20 +4,20 @@ import com.google.gson.annotations.SerializedName
 
 data class ChatGPTResponse(
     @SerializedName("id")
-    val id: String,
+    val id: String?,
 
     @SerializedName("object")
-    val item: String,
+    val item: String?,
 
     @SerializedName("created")
-    val created: Long,
+    val created: Long?,
 
     @SerializedName("model")
-    val model: String,
+    val model: String?,
 
     @SerializedName("choices")
-    val choices: List<GPTRecipeChoice>,
+    val choices: List<GPTRecipeChoice>?,
 
     @SerializedName("usage")
-    val usage: ChatGptUsage
+    val usage: ChatGptUsage?
 )

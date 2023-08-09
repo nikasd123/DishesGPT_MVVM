@@ -4,14 +4,14 @@ import com.google.gson.annotations.SerializedName
 
 data class GPTRecipeChoice(
     @SerializedName("text")
-    val text: String,
+    val text: String?,
 
     @SerializedName("index")
-    val index: Int,
+    val index: Int?,
 
     @SerializedName("logprobs")
     val logprobs: Any?,
 
     @SerializedName("finish_reason")
-    val finishReason: String
+    val finishReason: String?
 )
