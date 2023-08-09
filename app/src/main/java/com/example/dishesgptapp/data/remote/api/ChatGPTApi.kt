@@ -1,13 +1,13 @@
 package com.example.dishesgptapp.data.remote.api
 
 import com.example.dishesgptapp.BuildConfig
-import com.example.dishesgptapp.data.remote.dto.RecipeRequestBody
-import com.example.dishesgptapp.data.remote.dto.RecipeResponse
+import com.example.dishesgptapp.data.remote.dto.ChatGPTRequest
+import com.example.dishesgptapp.data.remote.dto.ChatGPTResponse
 import retrofit2.http.Body
 import retrofit2.http.Headers
 import retrofit2.http.POST
 
-interface ChatGPTService {
+interface ChatGPTApi {
 
     companion object{
         const val API_KEY_PARAM = "Authorization"
@@ -18,6 +18,6 @@ interface ChatGPTService {
     @Headers("Content-Type: $CONTENT_TYPE, $API_KEY_PARAM: $API_KEY")
     @POST("completions")
     suspend fun generateRecipe(
-        @Body requestBody: RecipeRequestBody
-    ): RecipeResponse
+        @Body requestBody: ChatGPTRequest
+    ): ChatGPTResponse
 }

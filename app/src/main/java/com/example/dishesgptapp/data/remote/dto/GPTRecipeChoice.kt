@@ -2,7 +2,7 @@ package com.example.dishesgptapp.data.remote.dto
 
 import com.google.gson.annotations.SerializedName
 
-data class RecipeChoice(
+data class GPTRecipeChoice(
     @SerializedName("text")
     val text: String,
 

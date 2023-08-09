@@ -2,7 +2,7 @@ package com.example.dishesgptapp.data.remote.dto
 
 import com.google.gson.annotations.SerializedName
 
-data class RecipeResponse(
+data class ChatGPTResponse(
     @SerializedName("id")
     val id: String,
 
@@ -16,7 +16,7 @@ data class RecipeResponse(
     val model: String,
 
     @SerializedName("choices")
-    val choices: List<RecipeChoice>,
+    val choices: List<GPTRecipeChoice>,
 
     @SerializedName("usage")
     val usage: ChatGptUsage
