@@ -1,5 +1,6 @@
 package com.example.dishesgptapp.data.remote.dto
 
+import com.example.dishesgptapp.domain.models.DomainGPTRecipeChoice
 import com.google.gson.annotations.SerializedName
 
 data class GPTRecipeChoice(
@@ -15,3 +16,11 @@ data class GPTRecipeChoice(
     @SerializedName("finish_reason")
     val finishReason: String?
 )
+internal fun GPTRecipeChoice.toDomainGPTRecipeChoice(): DomainGPTRecipeChoice =
+    DomainGPTRecipeChoice(
+        text = text,
+        index = index,
+        logprobs = logprobs,
+        finishReason = finishReason
+    )
+
