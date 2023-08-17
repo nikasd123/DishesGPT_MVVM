@@ -7,7 +7,7 @@ data class ChatGPTRequest(
     val prompt: String?,
 
     @SerializedName("model")
-    val model: Int?,
+    val model: String?,
 
     @SerializedName("temperature")
     val temperature: Double?,
