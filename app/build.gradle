@@ -4,6 +4,7 @@ plugins {
 
     id 'kotlin-kapt'
     id 'com.google.dagger.hilt.android'
+    id 'com.google.devtools.ksp'
 }
 
 android {
@@ -12,8 +13,8 @@ android {
 
     defaultConfig {
         applicationId "com.example.dishesgptapp"
-        minSdk 25
-        targetSdk 34
+        minSdk 24
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -49,8 +50,6 @@ dependencies {
     //Room
     implementation 'androidx.room:room-runtime:2.5.2'
     implementation 'androidx.room:room-ktx:2.5.2'
-    implementation 'androidx.core:core-ktx:1.10.1'
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1'
     kapt 'androidx.room:room-compiler:2.5.2'
 
     //Timber
@@ -60,7 +59,8 @@ dependencies {
     implementation 'com.google.dagger:hilt-android:2.46.1'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.1'
-    kapt 'com.google.dagger:hilt-compiler:2.44'
+    kapt 'com.google.dagger:hilt-compiler:2.46.1'
+    kapt 'org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.5.0'
 
     //Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
@@ -76,7 +76,7 @@ dependencies {
 
     //Glide
     implementation 'com.github.bumptech.glide:glide:4.14.2'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    kapt 'com.github.bumptech.glide:compiler:4.12.0'
 
     //Coroutine
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1'
@@ -86,8 +86,8 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
 
     //Navigation
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.6.0'
-    implementation "androidx.navigation:navigation-ui-ktx:2.6.0"
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.7.0'
+    implementation "androidx.navigation:navigation-ui-ktx:2.7.0"
 
     //JUnitTest
     testImplementation 'junit:junit:4.13.2'
