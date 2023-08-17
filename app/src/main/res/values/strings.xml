@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">DishesGPTApp</string>
     <string name="product_list_hint">input here your products</string>
-    <string name="button_add_text">more dish</string>
+    <string name="button_add_text">generate dishes</string>
+
+    <string name="null_prompt">null value</string>
 </resources>

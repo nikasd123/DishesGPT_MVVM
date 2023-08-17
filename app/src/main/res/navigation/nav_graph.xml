@@ -13,8 +13,8 @@
 
     <fragment
         android:id="@+id/start_fragment"
-        android:name="com.example.dishesgptapp.presentation.fragments.StartFragment"
-        tools:layout="@layout/fragment_start">
+        android:name="com.example.dishesgptapp.presentation.fragments.GptRecipesFragment"
+        tools:layout="@layout/fragment_gpt_recipes">
     </fragment>
 
 </navigation>
